@@ -8,7 +8,10 @@ import { fetchLatestInvoices } from '@/app/lib/data';
 import { Suspense } from 'react';
 import { LatestInvoicesSkeleton, RevenueChartSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
 import { fetchRevenue } from '@/app/lib/data';
-
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+    title: 'Page',
+};
 export default async function Page() {
     // const revenue = await fetchRevenue();
     // const latestInvoices = await fetchLatestInvoices();
